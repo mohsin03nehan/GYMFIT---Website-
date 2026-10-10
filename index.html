@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GYMFIT | Train Hard. Live Strong.</title>
+<meta name="description" content="GYMFIT - strength, personal training, cardio and yoga with expert coaches.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#home">Skip to content</a>
+
+<!-- A. Top bar (placeholder contact details - replace later) -->
+<div class="topbar"><div class="container">
+  <div><a href="tel:+10000000000"><i class="fa-solid fa-phone"></i> +1 (000) 000-0000</a>
+  <a href="mailto:info@gymfit.example"><i class="fa-solid fa-envelope"></i> info@gymfit.example</a></div>
+  <div class="social">
+    <a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://x.com" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="https://youtube.com" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+</div></div>
+
+<!-- B. Navigation -->
+<header class="header" id="header"><div class="container nav">
+  <a href="#home" class="logo">GYM<span>FIT</span></a>
+  <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars"></i></button>
+  <nav id="menu" class="menu" aria-label="Main">
+    <a href="#home">Home</a><a href="#about">About Us</a><a href="#courses">Courses</a>
+    <a href="#trainers">Trainers</a><a href="#schedule">Schedule</a><a href="#membership">Membership</a>
+    <a href="#contact">Contact Us</a>
+    <a href="#membership" class="btn btn-sm">Join Now</a>
+  </nav>
+</div></header>
+
+<main>
+<!-- C. Hero slider -->
+<section id="home" class="hero" aria-roledescription="carousel" aria-label="Featured">
+  <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1800&q=70')">
+    <div class="container"><h1>Train Hard.<br>Live Strong.</h1><h2>Your fitness. Your future.</h2>
+    <p>Real coaching, serious equipment and a community that shows up. Start building the body and habits that last.</p>
+    <div class="actions"><a href="#membership" class="btn">Join Now</a><a href="#courses" class="btn btn-outline">Explore Programs</a></div></div>
+  </div>
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1800&q=70')">
+    <div class="container"><h1>Build Real<br>Strength.</h1><h2>Every rep counts.</h2>
+    <p>Progressive programs designed by certified coaches, for beginners and seasoned lifters alike.</p>
+    <div class="actions"><a href="#membership" class="btn">Join Now</a><a href="#courses" class="btn btn-outline">Explore Programs</a></div></div>
+  </div>
+  <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1800&q=70')">
+    <div class="container"><h1>Push Past<br>Your Limits.</h1><h2>Stronger than yesterday.</h2>
+    <p>Group classes, one-on-one coaching and recovery spaces under one roof.</p>
+    <div class="actions"><a href="#membership" class="btn">Join Now</a><a href="#courses" class="btn btn-outline">Explore Programs</a></div></div>
+  </div>
+  <button class="arrow prev" id="prev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+  <button class="arrow next" id="next" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+  <div class="dots" id="dots"></div>
+</section>
+
+<!-- D. About -->
+<section id="about" class="section light"><div class="container two-col">
+  <div class="about-imgs reveal">
+    <img class="img-a" src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=70" alt="Lifter performing a barbell exercise in the gym" loading="lazy">
+    <img class="img-b" src="https://images.unsplash.com/photo-1549060279-7e168fcee0c2?auto=format&fit=crop&w=600&q=70" alt="Rows of dumbbells on a gym rack" loading="lazy">
+  </div>
+  <div class="reveal">
+    <p class="eyebrow">Who we are</p><h2 class="title">About Us</h2>
+    <h3 class="sub">More than just a gym</h3>
+    <p>GYMFIT was founded on a simple idea: everyone deserves expert guidance and a space that makes training feel worthwhile. Our mission is to help members move better, get stronger and stay consistent.</p>
+    <p>Whether you are stepping into a gym for the first time or preparing for competition, our coaches build programs around your goals, schedule and current ability.</p>
+    <ul class="ticks">
+      <li><i class="fa-solid fa-user-check"></i> Expert trainers</li>
+      <li><i class="fa-solid fa-dumbbell"></i> Modern equipment</li>
+      <li><i class="fa-solid fa-chart-line"></i> Results-driven programs</li>
+    </ul>
+    <a href="#contact" class="btn">Discover More</a>
+  </div>
+</div></section>
+
+<!-- E. Courses (cards rendered from data in js/script.js) -->
+<section id="courses" class="section dark"><div class="container">
+  <div class="head reveal"><h2 class="title">Our Courses</h2><p class="lead">We aim to transform your abilities</p></div>
+  <div class="grid cols-4" id="courseGrid"></div>
+</div></section>
+
+<!-- F. Trainers (rendered from data) -->
+<section id="trainers" class="section grey"><div class="container">
+  <div class="head reveal"><h2 class="title">Meet Our Trainers</h2><p class="lead dark-text">Certified coaches who care about your progress</p></div>
+  <div class="grid cols-3" id="trainerGrid"></div>
+</div></section>
+
+<!-- G. Schedule (rendered from data) -->
+<section id="schedule" class="section dark"><div class="container">
+  <div class="head reveal"><h2 class="title">Class Schedule</h2><p class="lead">Sample weekly timetable</p></div>
+  <div class="table-wrap reveal"><table class="timetable" id="timetable"></table></div>
+</div></section>
+
+<!-- H. Membership (sample prices - edit freely) -->
+<section id="membership" class="section light"><div class="container">
+  <div class="head reveal"><h2 class="title">Membership</h2><p class="lead dark-text">Sample plans and prices</p></div>
+  <div class="grid cols-3 pricing">
+    <article class="plan reveal"><h3>Basic</h3><p class="price">$29<span>/month</span></p><p class="term">3-month minimum</p>
+      <ul><li>Gym floor access</li><li>Locker room</li><li>1 fitness assessment</li></ul>
+      <a href="#contact" class="btn btn-dark" data-plan="Basic">Choose Plan</a></article>
+    <article class="plan featured reveal"><span class="badge">Recommended</span><h3>Premium</h3><p class="price">$59<span>/month</span></p><p class="term">6-month minimum</p>
+      <ul><li>Everything in Basic</li><li>Unlimited group classes</li><li>2 coaching sessions / month</li><li>Sauna access</li></ul>
+      <a href="#contact" class="btn" data-plan="Premium">Choose Plan</a></article>
+    <article class="plan reveal"><h3>Elite</h3><p class="price">$99<span>/month</span></p><p class="term">12-month minimum</p>
+      <ul><li>Everything in Premium</li><li>Weekly personal training</li><li>Nutrition plan</li><li>Priority booking</li></ul>
+      <a href="#contact" class="btn btn-dark" data-plan="Elite">Choose Plan</a></article>
+  </div>
+</div></section>
+
+<!-- I. Testimonials (sample, fictional) -->
+<section class="section dark" id="testimonials"><div class="container">
+  <div class="head reveal"><h2 class="title">Member Stories</h2><p class="lead">Sample testimonials from fictional members</p></div>
+  <div class="grid cols-3" id="testimonialGrid"></div>
+</div></section>
+
+<!-- J. CTA -->
+<section class="cta"><div class="container reveal">
+  <h2>Your strongest self starts today.</h2>
+  <p>Pick a plan, book a free assessment and take the first step this week.</p>
+  <a href="#membership" class="btn">Start Your Journey</a>
+</div></section>
+
+<!-- K. Contact -->
+<section id="contact" class="section grey"><div class="container two-col top">
+  <form id="contactForm" class="form reveal" novalidate>
+    <h2 class="title">Contact Us</h2>
+    <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" autocomplete="name"><small class="err"></small></div>
+    <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"><small class="err"></small></div>
+    <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel"><small class="err"></small></div>
+    <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" type="text"><small class="err"></small></div>
+    <div class="field"><label for="message">Message</label><textarea id="message" name="message" rows="5"></textarea><small class="err"></small></div>
+    <button type="submit" class="btn">Send Message</button>
+    <p class="status" id="formStatus" role="status" aria-live="polite"></p>
+  </form>
+  <aside class="info reveal">
+    <h3>Visit the gym</h3>
+    <p><i class="fa-solid fa-location-dot"></i> 123 Example Street, Your City, 00000</p>
+    <p><i class="fa-solid fa-phone"></i> +1 (000) 000-0000</p>
+    <p><i class="fa-solid fa-envelope"></i> info@gymfit.example</p>
+    <h3>Opening hours</h3>
+    <p>Mon - Fri: 5:00 AM - 11:00 PM<br>Sat - Sun: 7:00 AM - 9:00 PM</p>
+    <div class="social">
+      <a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://x.com" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://youtube.com" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </aside>
+</div></section>
+</main>
+
+<!-- L. Footer -->
+<footer class="footer"><div class="container fgrid">
+  <div><a href="#home" class="logo">GYM<span>FIT</span></a><p>Strength, coaching and community. Train with purpose at GYMFIT.</p></div>
+  <div><h4>Quick links</h4><a href="#about">About Us</a><a href="#trainers">Trainers</a><a href="#schedule">Schedule</a><a href="#membership">Membership</a></div>
+  <div><h4>Programs</h4><a href="#courses">Strength Training</a><a href="#courses">Personal Training</a><a href="#courses">Cardio &amp; Endurance</a><a href="#courses">Yoga &amp; Flexibility</a></div>
+  <div><h4>Contact</h4><p>123 Example Street, Your City</p><p>+1 (000) 000-0000</p><p>info@gymfit.example</p>
+    <div class="social"><a href="https://facebook.com" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="https://instagram.com" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://x.com" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></div></div>
+</div>
+<p class="copy">&copy; <span id="year">2026</span> GYMFIT. All rights reserved. Sample content.</p></footer>
+
+<button class="totop" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+</body>
+</html>
